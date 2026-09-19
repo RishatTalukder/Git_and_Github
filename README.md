@@ -107,4 +107,21 @@ The next line says, `no commits yet`, meaning you haven't made any saves to the 
 
 The last line tells you `nothing to commit (create/copy files and use "git add" to track)`. Meaning even though you's repository is initialized and is being tracked git doesn't have any files to monitor. You should use git add command to add the files you want to track.
 
-## Git Add
+# Git Architecture
+
+The Git architecture mainly has four areas:
+
+- The working directory.
+- The staging area.
+- The local repository.
+- The remote repository.
+
+The `working directory` referes to the folder you are currently working in. It's where you write your code and files.
+
+The `staging area` is for storing the changes you made to the files in your working directory before committing them to the repository.
+
+The `local repository` is a collection of files and directories that are tracked by git. It's where you store your project and its history.
+
+The `remote repository` is a cloud platform where you can `push` your local repository to. That's where you share your project with others.
+
+Your code will live in these four areas.
