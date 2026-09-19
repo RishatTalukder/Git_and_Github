@@ -8,7 +8,7 @@ This repository contains dummy files and directories for practicing git and gith
 
 On windows you can install git fromt their [official website.](https://git-scm.com/)
 
-If you are in linux git should already be installed in your system the.
+If you are in linux git should already be installed in your system. And if not than you can also install the linux version of git from the same website.
 
 Only thing you need is to open your terminal and type:
 
@@ -49,3 +49,62 @@ GitHub acts like the ultimate referee. Instead of you guys emailing files back a
 
 So, you have a very simple way of maintaining your code and working together with a team on a single project.
 
+# Setting up a Git Repository
+
+> A git repository is a collection of files and directories that are `tracked` by git.
+
+If you've installed git properly than make a new folder named `anything you want`.
+
+Inside that folder, make 2 or three empty files.
+
+I made a file named `test.txt`, `test.js` and `test.py`.
+
+Let's just assume this folder is your project folder. Now, open this folder in your terminal.
+
+Git is mainly a command line tool. So, you have to use the terminal and navigate to your project folder first.
+
+> Git has it's own GUI for easy navigation and management. If you use VS code for your work than it also has a built in git manager in the sidebar named version control.
+
+## Git Init
+
+Now, in the terminal type:
+
+```bash
+git init
+```
+
+After running this command you should see something like this:
+
+![alt text](image-1.png)
+
+You might get overwhelmed but the last line is the most important one.
+
+`Initialized empty Git repository in /home/username/Desktop/git_test/.git/`
+
+This line is git telling you, 'Bro this folder is mine now. I see everything here.'
+
+> After you use this command you shaould take a look inside your folder. You'll see a new folder named `.git` inside your project folder. This folder contains all information about your `git repository`. Any time you make a git repo or clone a git repo you'll see this folder. Any folder containing `.git` will by default be considered as a git repository by your computer.
+
+## Git Status
+
+Now, you might want to know what git is actually seeing.
+
+```bash
+git status
+```
+
+After running this command you will see some usefull information.
+
+![alt text](image-2.png)
+
+First line is `On branch master`. This tell you the name of the branch you are currently working on.
+
+> Branches are like separate snapshots of your project. Each branch can be completely separated from each other. a branch acts as an independent timeline or snapshot of your project's history, allowing you to work on new features or bug fixes without affecting the main codebase. I will talk more about branches later.
+
+The next line says, `no commits yet`, meaning you haven't made any saves to the repository yet.
+
+> A commit the act of saving `changes` to the repository. It's like saying yes Im happy with the work and I want to save it. This also let's you come back to this exact commit later if you need to. So, a commit works as a checkpoint and a snapshot of your project.
+
+The last line tells you `nothing to commit (create/copy files and use "git add" to track)`. Meaning even though you's repository is initialized and is being tracked git doesn't have any files to monitor. You should use git add command to add the files you want to track.
+
+## Git Add
