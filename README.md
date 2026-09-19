@@ -95,7 +95,7 @@ git status
 
 After running this command you will see some usefull information.
 
-![alt text](image-2.png)
+![alt text](image-3.png)
 
 First line is `On branch master`. This tell you the name of the branch you are currently working on.
 
@@ -125,3 +125,38 @@ The `local repository` is a collection of files and directories that are tracked
 The `remote repository` is a cloud platform where you can `push` your local repository to. That's where you share your project with others.
 
 Your code will live in these four areas.
+
+# Git config
+
+For your identification purposes you need to set your name and email.
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "Your Email"
+```
+
+You have to do this because git expects the indentity of the person who is making the commits. It's like a signature.
+
+# Git Add
+
+Git add is the command to add files to the staging area from your working directory.
+
+```bash
+git add test.txt
+```
+
+Now, git will actively track the changes you made to the file.
+
+You can check by typing git status again.
+
+![alt text](image-2.png)
+
+As you can see only the `test.txt` file is now being tracked. Other file are still being ignored.
+
+You can also stage every untracked file all at once.
+
+```bash
+git add .
+```
+
+![alt text](image-4.png)
