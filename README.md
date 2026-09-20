@@ -160,3 +160,59 @@ git add .
 ```
 
 ![alt text](image-4.png)
+
+# Git Commit
+
+Commit is the process of taking the staged changes and saving them to the `local repository`.
+
+> Remember, git commmit will only save the changes you made to the files in the staging area.
+
+Anything outside the staging area will be ignored.
+
+All the files of the folder is now staging area. Let save it in the repository.
+
+```bash
+git commit -m "first commit"
+```
+
+> When you are commiting something you must add a commit messege to explain what you did. You have to use the `-m` flag to do that.
+
+After pressing enter you should see something like this.
+
+![alt text](image-5.png)
+
+You can see which files you've saved and the commit messege you used.
+
+Now, remember when I said a commit is a checkpoint and a snapshot of your project at the time you made the commit.
+
+## Git Log
+
+You can check all the commits by typing:
+
+```bash
+git log
+```
+
+![alt text](image-6.png)
+
+You can see all the commits done in a branch by `git log`.
+
+I'll make a new file named `test.css` and commit it just to show you how usefull git log is.
+
+![alt text](image-7.png)
+
+```bash
+git log
+```
+
+![alt text](image-8.png)
+
+> If you having trouble getting out of this screen just press `q`.
+
+So much information about is being stored in the logs. But here's a problem when you have a lot of commits you don't really need this much information all the time.
+
+You use can use `git log --oneline` to get a short summary of the commits.
+
+![alt text](image-9.png)
+
+Only the commit messeges are shown.
