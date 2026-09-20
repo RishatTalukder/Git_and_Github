@@ -216,3 +216,16 @@ You use can use `git log --oneline` to get a short summary of the commits.
 ![alt text](image-9.png)
 
 Only the commit messeges are shown.
+
+# Using git with vscode
+
+If you use vs code as your default work environment, vscode comes built in with a nice version control manager in the sidebar.
+
+You can press `ctrl+g` or `ctrl+shift+g` to open the version control manager.
+
+It only works if your pc has a git already installed. Vscode should automatically detect if you have git installed properly in your system.
+
+Almost everything works the same. You can see the files that are being tracked, stage files, commit files and almost every feature is there with nice GUI like buttons.
+
+I use it a lot because I can see everything in single palce and I dont have remember a lot of git commands.
+
